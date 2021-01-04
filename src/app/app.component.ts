@@ -10,4 +10,12 @@ export class AppComponent {
   mydate = new Date();
 
   arr = ["pune", "Mumbai", "Jalgaon"];
+  mydata="abcd";
+  myname="";
+  hello(){
+    this.mydata = this.myname;
+  }
+  formHello(data){
+    console.log(data.txtusername +" "+ data.txtpassword)
+  }
 }

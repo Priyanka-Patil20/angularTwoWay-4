@@ -7,3 +7,14 @@
 <p>{{arr | slice: 1:2}}</p>
 <p>{{2 | demopipe}}</p>
 <p>{{"priyanka" | Capitalpipe}}</p>
+<p>This is variable:{{mydata}}</p>
+<input type="text" [(ngModel)]="myname" />
+<button (click)="hello()">Click</button>
+<p>This is binding:{{myname}}</p>
+
+<h2>Login Form </h2>
+<form #myform="ngForm" (ngSubmit)="formHello(myform.value)">
+  <input type="text" name="txtusername" ngModel/><br>
+  <input type="password" name="txtpassword" ngModel/><br>
+  <input type="submit"/>
+</form>
